@@ -18,14 +18,14 @@
 <main>
   <div class="cartao">
     <h1>Política de Privacidade</h1>
-    <p class="nota">Última atualização: 15 de outubro de 2026</p>
+    <p class="nota">Última atualização: 15 de outubro de 2026 (revisão: acesso pela conta Google, sem senha no aplicativo)</p>
 
     <p>Esta política explica como o aplicativo <strong>Avaliação Física PIAFI</strong> ("aplicativo") trata os dados pessoais registrados pela equipe do Programa de Incentivo à Atividade Física para Idosos (PIAFI) e os dados da conta Google usada para a sincronização, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD).</p>
 
     <h2>1. Quem é responsável</h2>
     <ul>
       <li><strong>Controlador dos dados:</strong> a instituição responsável pelo PIAFI, que decide quais dados são coletados e para qual finalidade.</li>
-      <li><strong>Desenvolvedor do aplicativo:</strong> Rodrigo França (<a href="mailto:prof.rodrigofranca@gmail.com">prof.rodrigofranca@gmail.com</a>). O desenvolvedor <strong>não tem acesso</strong> aos dados dos participantes, que ficam criptografados.</li>
+      <li><strong>Desenvolvedor do aplicativo:</strong> Rodrigo França (<a href="mailto:prof.rodrigofranca@gmail.com">prof.rodrigofranca@gmail.com</a>). O desenvolvedor não mantém servidores e <strong>não tem acesso</strong> à conta Google nem aos dados dos participantes.</li>
     </ul>
 
     <h2>2. Quais dados são tratados</h2>
@@ -49,9 +49,10 @@
 
     <h2>5. Como os dados são protegidos</h2>
     <ul>
-      <li>Os registros são <strong>criptografados no tablet (AES-256)</strong> antes de serem enviados ao Google Drive. Quem acessar a pasta ou a conta Google vê apenas arquivos ilegíveis, com nomes aleatórios, sem nomes de participantes.</li>
-      <li>A chave de criptografia é protegida por uma senha definida pela própria PIAFI (Senha PIAFI), que não é conhecida pelo desenvolvedor.</li>
-      <li>Os dados guardados nos tablets também ficam protegidos no armazenamento interno do aplicativo.</li>
+      <li><strong>Acesso pela conta Google da PIAFI:</strong> só quem tem acesso a essa conta consegue conectar um tablet à base. Por isso a conta deve ter senha forte e verificação em duas etapas.</li>
+      <li><strong>Arquivos cifrados no Drive (AES-256):</strong> cada registro é cifrado no tablet antes do envio, em arquivos com nomes aleatórios, sem nomes de participantes. Um arquivo avulso, copiado ou compartilhado por engano, não pode ser lido fora do aplicativo, e qualquer alteração indevida é detectada. A chave fica na própria pasta da base, no Drive da PIAFI; portanto, quem tiver acesso à conta Google da PIAFI também consegue acessar os dados.</li>
+      <li><strong>Tablets:</strong> o banco de dados de cada tablet é criptografado (SQLCipher), com a chave guardada no armazenamento seguro do Android. Se um tablet for perdido, os dados dele não podem ser lidos a partir do arquivo.</li>
+      <li><strong>Cópias de segurança:</strong> uma cópia diária, também cifrada, é guardada na mesma pasta do Drive, pelos últimos 30 dias.</li>
     </ul>
 
     <h2>6. Onde os dados ficam e por quanto tempo</h2>
